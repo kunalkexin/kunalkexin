@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSC CGL Exam Revision</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #1ed4d1;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #ff3e54;
+            color: #fff;
+            font-size: 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #ff6381;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quick One Day Revision for SSC CGL Exam</h1>
+        <p>Get our Revision PDF only in ₹25 and ace your exam!</p>
+
+         <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_M87TY6dJhDpsip" async> </script> </form>
+        
+        <a href="{% url 'pdfshop:download_pdf' %}" class="btn" id="downloadButton" download {% if payment_successful %} {% else %} disabled {% endif %}>Download Now</a>
+
+        <p>Don't miss out on this opportunity to boost your score and pass your exam with flying colors!</p>
+    </div>
+</body>
+</html>
